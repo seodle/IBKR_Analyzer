@@ -119,13 +119,14 @@ ui <- dashboardPage(
       menuItem("Asset Allocation", tabName = "portfolio", icon = icon("chart-pie")),
       menuItem("Glossary", tabName = "glossary", icon = icon("book"))
     ),
-    # Data Upload with different styling
+    # Data Upload
     tags$div(
       style = "margin-top: 20px; border-top: 1px solid #ddd; padding: 15px;",
-      sidebarMenu(
-        menuItem("Data Upload", tabName = "upload", 
-                 icon = icon("upload"))
-      )
+      fileInput("file1", "Upload IBKR data",
+                accept = c("text/plain", ".txt"),
+                buttonLabel = "Browse...",
+                placeholder = "No file selected"),
+      
     )
   ),
   
@@ -136,30 +137,7 @@ ui <- dashboardPage(
     ),
     
     tabItems(
-      # Upload tab with improved styling
-      tabItem(tabName = "upload",
-              fluidRow(
-                box(
-                  title = div(icon("upload"), " Upload IBKR Data", style = "display: flex; align-items: center; gap: 10px;"),
-                  status = "primary",
-                  solidHeader = TRUE,
-                  fileInput("file1", "Choose data",
-                            accept = c("text/plain", ".txt"),
-                            buttonLabel = "Browse...",
-                            placeholder = "No file selected"),
-                  width = 12
-                ),
-                box(
-                  title = div(icon("info-circle"), " Data Summary", style = "display: flex; align-items: center; gap: 10px;"),
-                  status = "info",
-                  solidHeader = TRUE,
-                  verbatimTextOutput("summary"),
-                  width = 12
-                )
-              )
-      ),
-      
-      # Dashboard tab with improved layout
+      # Dashboard tab
       tabItem(tabName = "dashboard",
               fluidRow(
                 box(
@@ -556,17 +534,6 @@ server <- function(input, output, session) {
     )
     
     return(filtered)
-  })
-  
-  # Data summary output
-  output$summary <- renderPrint({
-    req(processed_data())
-    data <- processed_data()
-    cat("\nData Summary:\n")
-    cat("Number of rows:", nrow(data), "\n")
-    cat("Date range:", min(data$Date), "to", max(data$Date), "\n")
-    cat("Number of unique accounts:", length(unique(data$Compte)), "\n")
-    cat("Number of unique transaction types:", length(unique(data$`Type.de.transaction`)), "\n")
   })
   
   # Update value boxes to use time period filter
