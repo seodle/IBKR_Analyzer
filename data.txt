@@ -1,0 +1,119 @@
+Date	Compte	Description	Type de transaction	Symbole	Quantité	Prix	Montant brut	Commission	Montant net	Taux de change	Frais de transaction	Multiplicateur
+2025-06-06	U***23071	FX Translations P&L	Ajustement	-	-	-	-3,364.79	-	-3,364.79	1.0000	-	1
+2025-06-04	U***23071	USD Intérêt créditeur pour Mai-2025	Credit Interest	-	-	-	7.83	-	7.83	0.8184	-	1
+2025-06-04	U***23071	Withholding @ 30% sur Intérêt créditeur pour Mai-2025	Foreign Tax Withholding	-	-	-	-2.35	-	-2.35	0.8184	-	1
+2025-05-26	U***64729	Transfert électronique de fonds	Dépôt	-	-	-	10,000.00	-	10,000.00	1.0000	-	1
+2025-05-05	U***23071	USD Intérêt créditeur pour Avr-2025	Credit Interest	-	-	-	94.64	-	94.64	0.8222	-	1
+2025-05-05	U***23071	Withholding @ 30% sur Intérêt créditeur pour Avr-2025	Foreign Tax Withholding	-	-	-	-28.39	-	-28.39	0.8222	-	1
+2025-04-24	U***23071	SPICHA(CH0131872431) Dividende en espèces CHF 0.38 par action (Dividende ordinaire)	Dividende	SPICZz	-	-	10.77	-	10.77	1.0000	-	1
+2025-04-24	U***23071	SPICHA(CH0131872431) Dividende en espèces CHF 0.38 par action - CH Taxes	Foreign Tax Withholding	SPICZz	-	-	-3.72	-	-3.72	1.0000	-	1
+2025-04-24	U***23071	SPICHA(CH0131872431) Dividende en espèces CHF 0.38 par action - Opération inverse (Dividende ordinaire)	Dividende	SPICZz	-	-	-10.77	-	-10.77	1.0000	-	1
+2025-04-24	U***23071	SPICHA(CH0131872431) Dividende en espèces CHF 0.38 par action (Dividende ordinaire)	Dividende	SPICZz	-	-	10.72	-	10.72	1.0000	-	1
+2025-04-24	U***23071	SPICHA(CH0131872431) Dividende en espèces CHF 0.38 par action - CH Taxes	Foreign Tax Withholding	SPICZz	-	-	3.72	-	3.72	1.0000	-	1
+2025-04-24	U***23071	SPICHA(CH0131872431) Dividende en espèces CHF 0.38 par action - CH Taxes	Foreign Tax Withholding	SPICZz	-	-	-3.72	-	-3.72	1.0000	-	1
+2025-04-22	U***23071	UBS ETF GOLD	Achat	AUUSIz	15.00	111.7600  USD	-1,373.07	-3.28	-1,376.35	0.8191	-	1
+2025-04-22	U***23071	UBS ETF GOLD	Achat	AUUSIz	0.30	111.6000  USD	-27.50	-	-27.50	0.8191	-	1
+2025-04-22	U***23071	UBS ETF GOLD	Achat	AUUSIz	0.00	111.6000  USD	-0.02	-	-0.02	0.8191	-	1
+2025-04-22	U***23071	SWISSCANTO CH SLVR ETF-EACHF	Achat	ZSILz	9.00	76.6700  CHF	-690.03	-5.00	-695.03	1.0000	-	1
+2025-04-22	U***23071	UBS ETF SPI	Achat	SPICZz	31.00	74.2300  CHF	-2,301.13	-5.00	-2,306.13	1.0000	-	1
+2025-04-22	U***23071	SWISSCANTO CH SLVR ETF-EACHF	Achat	ZSILz	1.00	76.0459  CHF	-76.05	-	-76.05	1.0000	-	1
+2025-04-22	U***23071	UBS ETF SPI	Achat	SPICZz	1.00	73.8869  CHF	-73.89	-	-73.89	1.0000	-	1
+2025-04-22	U***23071	SWISSCANTO CH SLVR ETF-EACHF	Achat	ZSILz	0.97	76.5900  CHF	-73.92	-	-73.92	1.0000	-	1
+2025-04-22	U***23071	UBS ETF SPI	Achat	SPICZz	0.34	74.1000  CHF	-24.98	-	-24.98	1.0000	-	1
+2025-04-22	U***23071	Montant net issu des transactions Forex en devise en base: 1,168.53 EUR.CHF	Forex Trade Component	EUR.CHF	1,168.53	0.9329  CHF	2.96	-	2.96	1.0000	-	1
+2025-04-22	U***23071	Montant net issu des transactions Forex en devise en base: 40.53 EUR.CHF	Forex Trade Component	EUR.CHF	40.53	0.9330  CHF	0.10	-	0.10	1.0000	-	1
+2025-04-22	U***23071	Montant net issu des transactions Forex en devise en base: 4,796.76 EUR.CHF	Forex Trade Component	EUR.CHF	4,796.76	0.9330  CHF	11.90	-	11.90	1.0000	-	1
+2025-04-22	U***23071	Montant net issu des transactions Forex en devise en base: 4.71 EUR.CHF	Forex Trade Component	EUR.CHF	4.71	0.9328  CHF	0.01	-	0.01	1.0000	-	1
+2025-04-22	U***23071	Montant net issu des transactions Forex en devise en base: 1.52 EUR.CHF	Forex Trade Component	EUR.CHF	1.52	0.9328  CHF	0.00	-	0.00	1.0000	-	1
+2025-04-22	U***23071	ISHARES STOXXE600 DE EUR DIS	Achat	EXSAd	41.00	50.2310  EUR	-1,926.55	-2.81	-1,929.36	0.9355	-	1
+2025-04-22	U***23071	ISHARES STOXXE600 DE EUR DIS	Achat	EXSAd	0.80	50.4900  EUR	-37.91	-	-37.91	0.9355	-	1
+2025-04-22	U***23071	AMUNDI MSCI EMERG MARK	Achat	AEEM	1,018.00	4.7090  EUR	-4,484.37	-2.81	-4,487.18	0.9355	-	1
+2025-04-22	U***23071	AMUNDI MSCI EMERG MARK	Achat	AEEM	1.00	4.7128  EUR	-4.41	-	-4.41	0.9355	-	1
+2025-04-22	U***23071	AMUNDI MSCI EMERG MARK	Achat	AEEM	0.32	4.7140  EUR	-1.43	-	-1.43	0.9355	-	1
+2025-04-22	U***23071	Montant net issu des transactions Forex en devise en base: 0.003302 EUR.CHF	Forex Trade Component	EUR.CHF	0.00	0.9357  CHF	0.00	-	0.00	1.0000	-	1
+2025-04-21	U***23071	B 07/29/25	Achat	912797QC4	31,000.00	98.8541  USD	-24,793.14	-4.05	-24,797.19	0.8091	-	1
+2025-04-21	U***23071	B 02/19/26	Achat	912797PM3	12,000.00	96.7752  USD	-9,395.51	-4.05	-9,399.56	0.8091	-	1
+2025-04-21	U***23071	VANGUARD S&P 500 ETF	Achat	VOO	0.15	479.3600  USD	-59.34	-0.59	-59.93	0.8091	-	1
+2025-04-21	U***23071	VANGUARD S&P 500 ETF	Achat	VOO	13.00	478.9700  USD	-5,037.64	-0.22	-5,037.85	0.8091	-	1
+2025-04-03	U***23071	USD Intérêt créditeur pour Mar-2025	Credit Interest	-	-	-	42.23	-	42.23	0.8591	-	1
+2025-04-03	U***23071	Withholding @ 30% sur Intérêt créditeur pour Mar-2025	Foreign Tax Withholding	-	-	-	-12.67	-	-12.67	0.8591	-	1
+2025-04-02	U***23071	(US912797MV69) Treasury Bill Maturity (912797MV6, B 04/03/25, US912797MV69)	Opération sur titres	912797MV6	-	-	26,633.34	-	26,633.34	0.8591	-	1
+2025-03-31	U***23071	SPICHA(CH0131872431) Dividende en espèces CHF 0.34 par action (Dividende ordinaire)	Dividende	SPICZz	-	-	9.64	-	9.64	1.0000	-	1
+2025-03-31	U***23071	SPICHA(CH0131872431) Dividende en espèces CHF 0.34 par action - CH Taxes	Foreign Tax Withholding	SPICZz	-	-	-3.37	-	-3.37	1.0000	-	1
+2025-03-31	U***23071	VOO(US9229083632) Dividende en espèces USD 1.8121 par action (Dividende ordinaire)	Dividende	VOO	-	-	46.48	-	46.48	0.8844	-	1
+2025-03-31	U***23071	VOO(US9229083632) Dividende en espèces USD 1.8121 par action - US Taxes	Foreign Tax Withholding	VOO	-	-	-13.95	-	-13.95	0.8844	-	1
+2025-03-21	U***23071	REZ(US4642885622) Dividende en espèces USD 0.368999 par action (Dividende ordinaire)	Dividende	REZ	-	-	9.78	-	9.78	0.8832	-	1
+2025-03-21	U***23071	REZ(US4642885622) Dividende en espèces USD 0.368999 par action - US Taxes	Foreign Tax Withholding	REZ	-	-	-2.93	-	-2.93	0.8832	-	1
+2025-03-17	U***23071	EXSA(DE0002635307) Dividende en espèces EUR 0.147768 par action (Mixed Income)	Dividende	EXSAd	-	-	11.91	-	11.91	0.9594	-	1
+2025-03-13	U***23071	SPICHA(CH0131872431) Dividende en espèces CHF 0.34 par action (Dividende ordinaire)	Dividende	SPICZz	-	-	9.64	-	9.64	1.0000	-	1
+2025-03-13	U***23071	SPICHA(CH0131872431) Dividende en espèces CHF 0.34 par action - CH Taxes	Foreign Tax Withholding	SPICZz	-	-	-3.33	-	-3.33	1.0000	-	1
+2025-03-10	U***23071	(US912797NQ65) Treasury Bill Maturity (912797NQ6, B 03/11/25, US912797NQ65)	Opération sur titres	912797NQ6	-	-	28,247.36	-	28,247.36	0.8827	-	1
+2025-03-05	U***23071	USD Intérêt créditeur pour Fév-2025	Credit Interest	-	-	-	10.64	-	10.64	0.8908	-	1
+2025-03-05	U***23071	Withholding @ 30% sur Intérêt créditeur pour Fév-2025	Foreign Tax Withholding	-	-	-	-3.19	-	-3.19	0.8908	-	1
+2025-02-12	U***23071	B 03/11/25	Achat	912797NQ6	32,000.00	99.6927  USD	-29,146.96	-4.57	-29,151.53	0.9136	-	1
+2025-02-12	U***23071	Montant net issu des transactions Forex en devise en base: 179.91 USD.CHF	Forex Trade Component	USD.CHF	179.91	0.9109  CHF	0.49	-	0.49	1.0000	-	1
+2025-02-12	U***23071	Montant net issu des transactions Forex en devise en base: -0.008635 USD.CHF	Forex Trade Component	USD.CHF	-0.01	0.9135  CHF	0.00	-	0.00	1.0000	-	1
+2025-02-11	U***23071	Montant net issu des transactions Forex en devise en base: -23,900 CHF.USD	Forex Trade Component	CHF.USD	-23,900.00	1.0968  USD	38.72	-1.82	38.72	0.9133	-	1
+2025-02-11	U***23071	Transfert électronique de fonds	Dépôt	-	-	-	30,000.00	-	30,000.00	1.0000	-	1
+2025-02-10	U***23071	Montant net issu des transactions Forex en devise en base: 6,396.17 EUR.CHF	Forex Trade Component	EUR.CHF	6,396.17	0.9381  CHF	6.43	-1.82	6.43	1.0000	-	1
+2025-02-10	U***23071	UBS ETF GOLD	Achat	AUUSIz	14.00	92.8400  USD	-1,184.52	-3.65	-1,188.17	0.9113	-	1
+2025-02-10	U***23071	UBS ETF SPI	Achat	SPICZz	0.35	80.0000  CHF	-28.00	-1.50	-29.50	1.0000	-	1
+2025-02-10	U***23071	ISHARES STOXXE600 DE EUR DIS	Achat	EXSAd	37.00	53.8711  EUR	-1,872.34	-2.82	-1,875.16	0.9394	-	1
+2025-02-10	U***23071	AMUNDI MSCI EMERG MARK	Achat	AEEM	655.00	5.3762  EUR	-3,307.84	-2.82	-3,310.65	0.9394	-	1
+2025-02-10	U***23071	Montant net issu des transactions Forex en devise en base: 3 EUR.CHF	Forex Trade Component	EUR.CHF	3.00	0.9398  CHF	0.00	-	0.00	1.0000	-	1
+2025-02-10	U***23071	Montant net issu des transactions Forex en devise en base: 3 EUR.CHF	Forex Trade Component	EUR.CHF	3.00	0.9397  CHF	0.00	-	0.00	1.0000	-	1
+2025-02-10	U***23071	ISHARS RES AND MULTI REALES	Achat	REZ	1.00	83.3700  USD	-75.98	-0.76	-76.74	0.9113	-	1
+2025-02-10	U***23071	VANGUARD S&P 500 ETF	Achat	VOO	9.00	555.3800  USD	-4,555.26	-0.91	-4,556.17	0.9113	-	1
+2025-02-10	U***23071	ISHARS RES AND MULTI REALES	Achat	REZ	3.00	83.3700  USD	-227.94	-0.15	-228.09	0.9113	-	1
+2025-02-10	U***23071	ISHARS RES AND MULTI REALES	Achat	REZ	26.00	83.3700  USD	-1,975.44	0.00	-1,975.44	0.9113	-	1
+2025-02-06	U***23071	B 01/22/26	Achat	912797PD3	12,000.00	96.1368  USD	-10,439.99	-4.52	-10,444.51	0.9050	-	1
+2025-02-06	U***23071	Transfert électronique de fonds	Dépôt	-	-	-	30,000.00	-	30,000.00	1.0000	-	1
+2025-02-05	U***23071	USD Intérêt créditeur pour Jan-2025	Credit Interest	-	-	-	37.88	-	37.88	0.9018	-	1
+2025-02-05	U***23071	Withholding @ 30% sur Intérêt créditeur pour Jan-2025	Foreign Tax Withholding	-	-	-	-11.36	-	-11.36	0.9018	-	1
+2025-01-06	U***23071	CHF Intérêt créditeur pour Déc-2024	Credit Interest	-	-	-	0.85	-	0.85	1.0000	-	1
+2025-01-06	U***23071	USD Intérêt créditeur pour Déc-2024	Credit Interest	-	-	-	2.67	-	2.67	0.9046	-	1
+2025-01-06	U***23071	Montant net issu des transactions Forex en devise en base: -2.95 USD.CHF	Forex Trade Component	USD.CHF	-2.95	0.9045  CHF	0.00	-	0.00	1.0000	-	1
+2025-01-06	U***23071	Withholding @ 30% sur Intérêt créditeur pour Déc-2024	Foreign Tax Withholding	-	-	-	-0.81	-	-0.81	0.9046	-	1
+2025-01-06	U***23071	Withholding @ 30% sur Intérêt créditeur pour Déc-2024	Foreign Tax Withholding	-	-	-	-0.26	-	-0.26	1.0000	-	1
+2025-01-03	U***23071	Montant net issu des transactions Forex en devise en base: -30,000 CHF.USD	Forex Trade Component	CHF.USD	-30,000.00	1.0981  USD	-74.26	-1.82	-74.26	0.9085	-	1
+2025-01-03	U***23071	Montant net issu des transactions Forex en devise en base: -355.31 EUR.USD	Forex Trade Component	EUR.USD	-355.31	1.0277  USD	-1.02	-	-1.02	0.9085	-	1
+2025-01-03	U***23071	Montant net issu des transactions Forex en devise en base: 21,955.14 USD.CHF	Forex Trade Component	USD.CHF	21,955.14	0.9108  CHF	-50.72	-	-50.72	1.0000	-	1
+2025-01-03	U***23071	B 04/03/25	Achat	912797MV6	31,000.00	98.9828  USD	-27,876.72	-4.54	-27,881.27	0.9085	-	1
+2025-01-03	U***23071	Montant net issu des transactions Forex en devise en base: -7,110.3 USD.CHF	Forex Trade Component	USD.CHF	-7,110.30	0.9100  CHF	10.74	-	10.74	1.0000	-	1
+2025-01-03	U***23071	Montant net issu des transactions Forex en devise en base: -0.37 USD.CHF	Forex Trade Component	USD.CHF	-0.37	0.9100  CHF	0.00	-	0.00	1.0000	-	1
+2025-01-03	U***23071	Montant net issu des transactions Forex en devise en base: 7,105.61 USD.CHF	Forex Trade Component	USD.CHF	7,105.61	0.9109  CHF	-16.77	-	-16.77	1.0000	-	1
+2025-01-03	U***23071	Montant net issu des transactions Forex en devise en base: -0.01 EUR.CHF	Forex Trade Component	EUR.CHF	-0.01	0.9363  CHF	0.00	-	0.00	1.0000	-	1
+2025-01-03	U***23071	Montant net issu des transactions Forex en devise en base: 0.00750067 USD.CHF	Forex Trade Component	USD.CHF	0.01	0.9089  CHF	0.00	-	0.00	1.0000	-	1
+2025-01-02	U***23071	Transfert électronique de fonds	Dépôt	-	-	-	50,000.00	-	50,000.00	1.0000	-	1
+2024-12-30	U***23071	B 12/26/25	Achat	912797NU7	12,000.00	95.9965  USD	-10,410.59	-4.52	-10,415.11	0.9037	-	1
+2024-12-26	U***23071	VOO(US9229083632) Dividende en espèces USD 1.7385 par action (Dividende ordinaire)	Dividende	VOO	-	-	31.25	-	31.25	0.8987	-	1
+2024-12-26	U***23071	VOO(US9229083632) Dividende en espèces USD 1.7385 par action - US Taxes	Foreign Tax Withholding	VOO	-	-	-9.37	-	-9.37	0.8987	-	1
+2024-12-16	U***23071	EXSA(DE0002635307) Dividende en espèces EUR 0.190028 par action (Mixed Income)	Dividende	EXSAd	-	-	8.36	-	8.36	0.9366	-	1
+2024-12-10	U***23071	UBS ETF SPI	Achat	SPICZz	28.00	74.5700  CHF	-2,087.96	-5.00	-2,092.96	1.0000	-	1
+2024-12-10	U***23071	Montant net issu des transactions Forex en devise en base: 4 USD.CHF	Forex Trade Component	USD.CHF	4.00	0.8796  CHF	0.01	-	0.01	1.0000	-	1
+2024-12-10	U***23071	Montant net issu des transactions Forex en devise en base: -381.56 USD.CHF	Forex Trade Component	USD.CHF	-381.56	0.8786  CHF	-1.63	-	-1.63	1.0000	-	1
+2024-12-10	U***23071	Montant net issu des transactions Forex en devise en base: -0.06 USD.CHF	Forex Trade Component	USD.CHF	-0.06	0.8786  CHF	0.00	-	0.00	1.0000	-	1
+2024-12-10	U***23071	UBS ETF GOLD	Achat	AUUSIz	11.00	85.5000  USD	-830.33	-3.53	-833.86	0.8829	-	1
+2024-12-10	U***23071	AMUNDI MSCI EMERG MARK	Achat	AEEM	1,010.00	5.2538  EUR	-4,931.87	-2.79	-4,934.66	0.9294	-	1
+2024-12-10	U***23071	Montant net issu des transactions Forex en devise en base: -3.18 USD.CHF	Forex Trade Component	USD.CHF	-3.18	0.8789  CHF	-0.01	-	-0.01	1.0000	-	1
+2024-12-10	U***23071	Montant net issu des transactions Forex en devise en base: -3.16 USD.CHF	Forex Trade Component	USD.CHF	-3.16	0.8789  CHF	-0.01	-	-0.01	1.0000	-	1
+2024-12-10	U***23071	ISHARES STOXXE600 DE EUR DIS	Achat	EXSAd	47.00	51.5510  EUR	-2,251.92	-2.79	-2,254.70	0.9294	-	1
+2024-12-10	U***23071	Montant net issu des transactions Forex en devise en base: 3 EUR.CHF	Forex Trade Component	EUR.CHF	3.00	0.9277  CHF	0.01	-	0.01	1.0000	-	1
+2024-12-10	U***23071	Montant net issu des transactions Forex en devise en base: 3 EUR.CHF	Forex Trade Component	EUR.CHF	3.00	0.9277  CHF	0.01	-	0.01	1.0000	-	1
+2024-12-10	U***23071	Montant net issu des transactions Forex en devise en base: -0.00558767 USD.CHF	Forex Trade Component	USD.CHF	-0.01	0.8826  CHF	0.00	-	0.00	1.0000	-	1
+2024-12-09	U***23071	Montant net issu des transactions Forex en devise en base: -12,400 CHF.USD	Forex Trade Component	CHF.USD	-12,400.00	1.1365  USD	-17.71	-1.76	-17.71	0.8788	-	1
+2024-12-09	U***23071	Montant net issu des transactions Forex en devise en base: 8,075.63 EUR.CHF	Forex Trade Component	EUR.CHF	8,075.63	0.9287  CHF	-12.58	-1.76	-12.58	1.0000	-	1
+2024-12-09	U***23071	Montant net issu des transactions Forex en devise en base: 11,115.4 USD.CHF	Forex Trade Component	USD.CHF	11,115.40	0.8794  CHF	-7.56	-	-7.56	1.0000	-	1
+2024-12-09	U***23071	Montant net issu des transactions Forex en devise en base: 1 USD.CHF	Forex Trade Component	USD.CHF	1.00	0.8795  CHF	0.00	-	0.00	1.0000	-	1
+2024-12-09	U***23071	VANGUARD S&P 500 ETF	Achat	VOO	20.00	555.7700  USD	-9,767.88	-0.88	-9,768.76	0.8788	-	1
+2024-12-09	U***23071	Montant net issu des transactions Forex en devise en base: 0.00096 USD.CHF	Forex Trade Component	USD.CHF	0.00	0.8792  CHF	0.00	-	0.00	1.0000	-	1
+2024-12-04	U***23071	CHF Intérêt créditeur pour Nov-2024	Credit Interest	-	-	-	0.39	-	0.39	1.0000	-	1
+2024-12-04	U***23071	Withholding @ 30% sur Intérêt créditeur pour Nov-2024	Foreign Tax Withholding	-	-	-	-0.12	-	-0.12	1.0000	-	1
+2024-11-26	U***23071	Transfert électronique de fonds	Dépôt	-	-	-	30,000.00	-	30,000.00	1.0000	-	1
+2024-09-18	U***23071	Montant net issu des transactions Forex en devise en base: 7.5 USD.CHF	Forex Trade Component	USD.CHF	7.50	0.8430  CHF	0.02	-	0.02	1.0000	-	1
+2024-09-18	U***23071	Montant net issu des transactions Forex en devise en base: 3,852.88 USD.CHF	Forex Trade Component	USD.CHF	3,852.88	0.8429  CHF	12.71	-	12.71	1.0000	-	1
+2024-09-18	U***23071	B 09/04/25	Achat	912797MH7	4,000.00	96.3221  USD	-3,260.31	-6.35	-3,266.65	0.8462	-	1
+2024-09-18	U***23071	B 09/04/25	Achat	912797MH7	8,000.00	96.3070  USD	-6,519.60	-	-6,519.60	0.8462	-	1
+2024-09-18	U***23071	Montant net issu des transactions Forex en devise en base: 7,704.56 USD.CHF	Forex Trade Component	USD.CHF	7,704.56	0.8444  CHF	14.25	-	14.25	1.0000	-	1
+2024-09-17	U***23071	Transfert électronique de fonds	Dépôt	-	-	-	10,000.00	-	10,000.00	1.0000	-	1
+2024-09-16	U***23071	Transfert électronique de fonds	Dépôt	-	-	-	1,200.00	-	1,200.00	1.0000	-	1

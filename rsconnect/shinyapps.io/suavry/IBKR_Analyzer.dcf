@@ -1,0 +1,13 @@
+name: IBKR_Analyzer
+title: IBKR_Analyser
+username: suavry
+account: suavry
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14901320
+bundleId: 10422669
+url: https://suavry.shinyapps.io/IBKR_Analyzer/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: data.txt
