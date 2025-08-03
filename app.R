@@ -105,7 +105,7 @@ ui <- dashboardPage(
   
   dashboardSidebar(
     width = 300,
-    # Account selector at the top with better styling
+    # Account selector
     div(
       style = "padding: 15px;",
       selectInput("account", "Select Account",
@@ -536,7 +536,7 @@ server <- function(input, output, session) {
     return(filtered)
   })
   
-  # Update value boxes to use time period filter
+  # Update value boxes
   output$total_deposits <- renderValueBox({
     req(filtered_data_by_period())
     valueBox(
@@ -571,9 +571,8 @@ server <- function(input, output, session) {
   output$total_interest_tax <- renderValueBox({
     req(filtered_data_by_period())
     valueBox(
-      sum(filtered_data_by_period()$Montant.net[filtered_data_by_period()$Type.de.transaction == "Foreign Tax Withholding" & 
-                                                grepl("Withholding.*Intérêt créditeur", filtered_data_by_period()$Description)], na.rm = TRUE),
-      "Interest Tax Withholding",
+      sum(filtered_data_by_period()$Montant.net[filtered_data_by_period()$Type.de.transaction == "Intérêts créditeurs"], na.rm = TRUE),
+      "Interest on Cash",
       icon = icon("money-bill-wave"),
       color = "orange"
     )
@@ -657,6 +656,8 @@ server <- function(input, output, session) {
           `Type.de.transaction` == "Commission" ~ "Commission (Fee)",
           `Type.de.transaction` == "FX Translations P&L" ~ "FX Translations P&L",
           `Type.de.transaction` == "Ajustement" ~ "Ajustement (Adjustment)",
+          `Type.de.transaction` == "Intérêts" ~ "Intérêts créditeurs",
+          `Type.de.transaction` == "Vente Obligations" ~ "Opération sur titres",
           TRUE ~ `Type.de.transaction`
         )
       )
@@ -714,38 +715,51 @@ server <- function(input, output, session) {
   current_holdings <- reactive({
     req(filtered_data())
     
-    # Get all purchases
-    purchases <- filtered_data() %>%
-      filter(Type.de.transaction == "Achat") %>%
+    # Calculate net quantities by summing purchases and sales
+    quantity_changes <- filtered_data() %>%
+      filter(Type.de.transaction %in% c("Achat", "Vente")) %>%
+      mutate(Quantity = ifelse(Type.de.transaction == "Achat", Quantité)) %>%
       group_by(Symbole, Description) %>%
       summarise(
-        Total_Quantity = sum(Quantité, na.rm = TRUE),
-        Average_Price = mean(Prix, na.rm = TRUE),
-        Total_Investment = sum(Montant.net, na.rm = TRUE),
-        Currency = ifelse(grepl("USD", Description), "USD", 
-                          ifelse(grepl("EUR", Description), "EUR", "CHF")),
+        Net_Quantity = sum(Quantity, na.rm = TRUE),
         .groups = "drop"
-      ) %>%
-      filter(Total_Quantity > 0)  # Only keep current holdings
-    
-    # Get latest prices from the most recent transaction
-    latest_prices <- filtered_data() %>%
-      filter(Type.de.transaction == "Achat") %>%
-      group_by(Symbole) %>%
-      arrange(desc(Date)) %>%
-      slice(1) %>%
-      select(Symbole, Prix)
-    
-    # Join with latest prices and calculate current value
-    holdings <- purchases %>%
-      left_join(latest_prices, by = "Symbole") %>%
-      mutate(
-        Current_Value = Total_Quantity * Prix,
-        Unrealized_PnL = Current_Value - Total_Investment,
-        PnL_Percentage = (Unrealized_PnL / Total_Investment) * 100
       )
     
-    return(holdings)
+    # Calculate average purchase price and total investment
+    purchases <- filtered_data() %>%
+      filter(Type.de.transaction %in% c("Achat", "Vente Obligations")) %>%
+      mutate(Adjusted_Amount = ifelse(Type.de.transaction == "Vente Obligations", 
+                                      -abs(Montant.net), 
+                                      abs(Montant.net)),
+             Adjusted_Quantity = ifelse(Type.de.transaction == "Vente Obligations", 
+                                        -Quantité, 
+                                        Quantité)) %>%
+      group_by(Symbole, Description) %>%
+      summarise(
+        Total_Purchase_Amount = sum(Adjusted_Amount, na.rm = TRUE),
+        Total_Purchase_Quantity = sum(Adjusted_Quantity, na.rm = TRUE),
+        .groups = "drop"
+      )
+    
+    # Join with quantity changes and calculate values
+    holdings <- quantity_changes %>%
+      left_join(purchases, by = c("Symbole", "Description")) %>%
+      mutate(
+        Average_Price = Total_Purchase_Amount / Total_Purchase_Quantity,
+        Total_Investment = Average_Price * Net_Quantity,
+        Currency = ifelse(grepl("USD", Description), "USD", 
+                          ifelse(grepl("EUR", Description), "EUR", "CHF")))
+        
+        # Here you would need to get CURRENT prices from an API or other source
+        # For now, we'll use average price as placeholder (not ideal)
+        holdings <- holdings %>%
+          mutate(
+            Current_Value = Net_Quantity * Average_Price,  # REPLACE with real current prices
+            Unrealized_PnL = Current_Value - Total_Investment,
+            PnL_Percentage = (Unrealized_PnL / Total_Investment) * 100
+          )
+        
+        return(holdings)
   })
   
   # Asset allocation plot
@@ -753,6 +767,7 @@ server <- function(input, output, session) {
     req(current_holdings())
     
     # Categorize assets
+    print(current_holdings)
     asset_data <- current_holdings() %>%
       mutate(
         Asset_Class = case_when(
@@ -771,6 +786,8 @@ server <- function(input, output, session) {
                        Percentage,
                        format(round(Total_Value), big.mark = "'"))
       )
+    
+    print(asset_data)
     
     # Calculate total value
     total_value <- sum(asset_data$Total_Value, na.rm = TRUE)
@@ -1017,7 +1034,7 @@ server <- function(input, output, session) {
         Cumulative_Amount = cumsum(Montant.net),
         tooltip = paste0(
           "Date: ", format(Date, "%Y-%m-%d"), "\n",
-          "Amount: ", format(round(Montant.net), big.mark = "'"), "\n",
+          "Amount: ", format(round(Montant.net, 2), big.mark = "'"), "\n",
           "Description: ", Description, "\n",
           "Cumulative: ", format(round(Cumulative_Amount), big.mark = "'")
         )
